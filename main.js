@@ -7,7 +7,7 @@ let handleMove = (event) => {
   const percent = y / speed.offsetHeight;
   const min = 0.4;
   const max = 4;
-  const height = Math.round(percent * 100) + `%`;
+  const height = `${Math.round(percent * 100)}%`;
   const playbackRate = percent * (max - min) + min;
   bar.style.height = height;
   bar.textContent = playbackRate.toFixed(2) + ` ×`;
