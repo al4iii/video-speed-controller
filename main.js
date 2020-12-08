@@ -10,7 +10,7 @@ let handleMove = (event) => {
   const height = `${Math.round(percent * 100)}%`;
   const playbackRate = percent * (max - min) + min;
   bar.style.height = height;
-  bar.textContent = playbackRate.toFixed(2) + ` ×`;
+  bar.textContent = `${playbackRate.toFixed(2)} ×`;
   video.playbackRate = playbackRate;
 }
 
